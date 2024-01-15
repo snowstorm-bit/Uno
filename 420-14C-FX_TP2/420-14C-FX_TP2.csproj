@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70E1C2A3-3E71-4616-B908-D4D3C392AF2B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_420_14C_FX_TP2</RootNamespace>
+    <AssemblyName>420-14C-FX_TP2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Konscious.Security.Cryptography.Argon2, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Konscious.Security.Cryptography.Argon2.1.2.1\lib\net46\Konscious.Security.Cryptography.Argon2.dll</HintPath>
+    </Reference>
+    <Reference Include="Konscious.Security.Cryptography.Blake2, Version=1.0.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Konscious.Security.Cryptography.Blake2.1.0.9\lib\net46\Konscious.Security.Cryptography.Blake2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.5.0.1\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Carte.cs" />
+    <Compile Include="Classes\Couleur.cs" />
+    <Compile Include="Classes\JetonAuthentification.cs" />
+    <Compile Include="Classes\JeuCarte.cs" />
+    <Compile Include="Classes\Joueur.cs" />
+    <Compile Include="Classes\ListeJoueurs.cs" />
+    <Compile Include="Classes\Noeud.cs" />
+    <Compile Include="Classes\Partie.cs" />
+    <Compile Include="Classes\Utilitaire.cs" />
+    <Compile Include="Classes\Valeur.cs" />
+    <Compile Include="frmAuthentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthentification.Designer.cs">
+      <DependentUpon>frmAuthentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectionCouleur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectionCouleur.Designer.cs">
+      <DependentUpon>frmSelectionCouleur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServeur.Designer.cs">
+      <DependentUpon>frmServeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUno.Designer.cs">
+      <DependentUpon>frmUno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUtilisateur.Designer.cs">
+      <DependentUpon>frmUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAuthentification.resx">
+      <DependentUpon>frmAuthentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectionCouleur.resx">
+      <DependentUpon>frmSelectionCouleur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServeur.resx">
+      <DependentUpon>frmServeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUno.resx">
+      <DependentUpon>frmUno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUtilisateur.resx">
+      <DependentUpon>frmUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Bleu.png" />
+    <Content Include="Resources\CarteDessus.png" />
+    <Content Include="Resources\CinqBleu.png" />
+    <Content Include="Resources\CinqJaune.png" />
+    <Content Include="Resources\CinqRouge.png" />
+    <Content Include="Resources\CinqVert.png" />
+    <Content Include="Resources\DeuxBleu.png" />
+    <Content Include="Resources\DeuxJaune.png" />
+    <Content Include="Resources\DeuxRouge.png" />
+    <Content Include="Resources\DeuxVert.png" />
+    <Content Include="Resources\HuitBleu.png" />
+    <Content Include="Resources\HuitJaune.png" />
+    <Content Include="Resources\HuitRouge.png" />
+    <Content Include="Resources\HuitVert.png" />
+    <Content Include="Resources\InverserSensBleu.png" />
+    <Content Include="Resources\InverserSensJaune.png" />
+    <Content Include="Resources\InverserSensRouge.png" />
+    <Content Include="Resources\InverserSensVert.png" />
+    <Content Include="Resources\Jaune.png" />
+    <Content Include="Resources\Joker.png" />
+    <Content Include="Resources\JokerBleu.png" />
+    <Content Include="Resources\JokerJaune.png" />
+    <Content Include="Resources\JokerNoir.png" />
+    <Content Include="Resources\JokerRouge.png" />
+    <Content Include="Resources\JokerVert.png" />
+    <Content Include="Resources\NeufBleu.png" />
+    <Content Include="Resources\NeufJaune.png" />
+    <Content Include="Resources\NeufRouge.png" />
+    <Content Include="Resources\NeufVert.png" />
+    <Content Include="Resources\Plus2Bleu.png" />
+    <Content Include="Resources\Plus2Jaune.png" />
+    <Content Include="Resources\Plus2Rouge.png" />
+    <Content Include="Resources\Plus2Vert.png" />
+    <Content Include="Resources\Plus4.png" />
+    <Content Include="Resources\Plus4Bleu.png" />
+    <Content Include="Resources\Plus4Jaune.png" />
+    <Content Include="Resources\Plus4Noir.png" />
+    <Content Include="Resources\Plus4Rouge.png" />
+    <Content Include="Resources\Plus4Vert.png" />
+    <Content Include="Resources\QuatreBleu.png" />
+    <Content Include="Resources\QuatreJaune.png" />
+    <Content Include="Resources\QuatreRouge.png" />
+    <Content Include="Resources\QuatreVert.png" />
+    <Content Include="Resources\Rouge.png" />
+    <Content Include="Resources\SauterTourBleu.png" />
+    <Content Include="Resources\SauterTourJaune.png" />
+    <Content Include="Resources\SauterTourRouge.png" />
+    <Content Include="Resources\SauterTourVert.png" />
+    <Content Include="Resources\SeptBleu.png" />
+    <Content Include="Resources\SeptJaune.png" />
+    <Content Include="Resources\SeptRouge.png" />
+    <Content Include="Resources\SeptVert.png" />
+    <Content Include="Resources\SixBleu.png" />
+    <Content Include="Resources\SixJaune.png" />
+    <Content Include="Resources\SixRouge.png" />
+    <Content Include="Resources\SixVert.png" />
+    <Content Include="Resources\TroisBleu.png" />
+    <Content Include="Resources\TroisJaune.png" />
+    <Content Include="Resources\TroisRouge.png" />
+    <Content Include="Resources\TroisVert.png" />
+    <Content Include="Resources\UnBleu.png" />
+    <Content Include="Resources\UnJaune.png" />
+    <Content Include="Resources\uno.png" />
+    <Content Include="Resources\UnRouge.png" />
+    <Content Include="Resources\UnVert.png" />
+    <Content Include="Resources\Vert.png" />
+    <Content Include="Resources\ZeroBleu.png" />
+    <Content Include="Resources\ZeroJaune.png" />
+    <Content Include="Resources\ZeroRouge.png" />
+    <Content Include="Resources\ZeroVert.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
